@@ -1,0 +1,29 @@
+
+#include <iostream>
+#include <iomanip>
+#include <conio.h>
+
+using namespace std;
+  
+int main()
+{
+	string input;
+	int elements = 0;
+	
+	cout << "Enter any character or numbers that you want to reverse: "; cin >> input;
+	
+	//Reverse process and counting of string 
+	input = string(input.rbegin(),input.rend());
+	
+	while (input[elements] != '\0') 
+    elements++;
+	
+	//output
+	cout << "Reverse of the characters or numbers you input are: " << input << endl;
+	cout << "The number of elements is: " << elements << endl;
+	
+	_getch();
+	
+	return 0;
+   
+}
